@@ -114,6 +114,9 @@
     <Compile Include="Services\MacroService.cs" />
     <Compile Include="Services\SolutionService.cs" />
     <Compile Include="Services\TemplateService.cs" />
+    <Compile Include="Settings\ServerSettingsGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ToolWindow\DiagramPreviewToolWindow.cs" />
     <Compile Include="ToolWindow\DiagramPreviewToolWindowCommand.cs" />
     <Compile Include="ToolWindow\DiagramPreviewToolWindowControl.xaml.cs">

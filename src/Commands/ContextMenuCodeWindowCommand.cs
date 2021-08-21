@@ -2,6 +2,7 @@
 using System.ComponentModel.Design;
 using System.Linq;
 using Microsoft.VisualStudio.Shell;
+using PlantUmlLanguageService.Settings;
 
 namespace PlantUmlLanguageService.Commands
 {
@@ -72,10 +73,21 @@ namespace PlantUmlLanguageService.Commands
             EnvDTE.DTE dte;
             EnvDTE.Document activeDocument;
 
+            Global.BaseUrl = GetBaseUrl();
+
             dte = (EnvDTE.DTE)ServiceProvider.GetService(typeof(EnvDTE.DTE));
             activeDocument = dte.ActiveDocument;
             activeDocument.Save();
             ServiceProvider.PreviewFileContent(activeDocument.FullName);
+        }
+
+        private string GetBaseUrl()
+        {
+            var settingsPage = (PlantUmlServerSettings)package.GetDialogPage(typeof(PlantUmlServerSettings));
+            var baseUrl = settingsPage.BaseUrl;
+            if (string.IsNullOrEmpty(baseUrl))
+                baseUrl = Constants.DefaultBaseUrl;
+            return baseUrl;
         }
     }
 }
