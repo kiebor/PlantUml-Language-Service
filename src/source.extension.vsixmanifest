@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="b9eaa052-e5b6-4c02-b696-5896e32f1125" Version="1.1.5.1" Language="en-US" Publisher="Kieran Borsden" />
+        <Identity Id="b9eaa052-e5b6-4c02-b696-5896e32f1125" Version="1.1.6.0" Language="en-US" Publisher="Kieran Borsden" />
         <DisplayName>PlantUml Language Service</DisplayName>
         <Description xml:space="preserve">Provides basic editor features for diagramming with PlantUml</Description>
         <MoreInfo>https://github.com/kiebor/PlantUml-Language-Service</MoreInfo>

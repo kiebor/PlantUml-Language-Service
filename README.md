@@ -17,6 +17,8 @@ PlantUml Language Service provides editor features for the [PlantUml Language](h
 
 **In its default state the language service currently posts your markup to the PlantUml server for rendering in the same manner most PlantUml services provide. Client side rendering via GraphViz will be implemented in a future release.**
 
+In versions **1.1.6** and later, the PlantUML server used to generate diagrams can be configured by setting the *BaseUrl* under *Tools* > *Options* > *PlantUML*. If not configured, the default of **https://www.plantuml.com/plantuml/** will be used.
+
 ##### Credit
 + [PlantUml](https://github.com/plantuml/plantuml) by [arnaudroques](https://github.com/arnaudroques)
 + Built and adapted from [TextMate starter project](https://github.com/madskristensen/TextmateSample) by [Mads Kristensen](https://github.com/madskristensen)
